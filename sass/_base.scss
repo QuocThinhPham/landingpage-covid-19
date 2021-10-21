@@ -1,0 +1,99 @@
+body {
+    font-family: $primary-font;
+    line-height: 1;
+    overflow-x: hidden;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1442px;
+    margin: 0 auto;
+    // outline: 1px solid red;
+}
+ul {
+    list-style: none;
+}
+.linear-background {
+    padding: 0 30px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 241, 241, 0.5) 50%,
+        rgba(255, 241, 241, 0) 100%
+    );
+}
+.section {
+    &-header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        .heading {
+            margin-bottom: 31px;
+            @media screen and (max-width: 767px) {
+                font-size: 38px;
+            }
+        }
+    }
+}
+.btn {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $primary-font;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: 65px;
+    border: 0;
+    outline: none;
+    &--primary {
+        font-size: 24px;
+        text-transform: capitalize;
+        padding: 25px 60px;
+        background-color: $primary-color;
+        color: white;
+    }
+    &--secondary {
+        padding: 16px 45px;
+        color: $primary-color;
+        border: 1px solid currentColor;
+        @media screen and (max-width: 767px) {
+            padding: 10px 30px;
+        }
+    }
+    &--submit {
+        padding: 25px 80px;
+        font-size: 22px;
+        background-color: $primary-color;
+        color: white;
+        @media screen and (max-width: 767px) {
+            padding: 15px 20px;
+            font-size: 15px;
+        }
+    }
+    &--change {
+        padding: 14px 12px;
+        @media screen and (max-width: 1279px) {
+            padding: 26px 30px;
+            svg {
+                width: 14px;
+                height: 21px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            padding: 16px 24px;
+            svg {
+                width: 10px;
+                height: 17px;
+            }
+        }
+    }
+    &--zoom {
+        font-size: 40px;
+        font-weight: lighter;
+        font-family: serif;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+}

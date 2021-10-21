@@ -1,0 +1,93 @@
+.should {
+    margin-bottom: 100px;
+    position: relative;
+    .section-header {
+        margin-bottom: 71px;
+        max-width: 645px;
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 55px;
+        }
+    }
+    &-container {
+        @media screen and (max-width: 1279px) {
+            padding: 0 30px;
+        }
+    }
+    &-row {
+        display: flex;
+        align-items: center;
+        gap: 0 150px;
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &-content {
+        max-width: 650px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 0 40px;
+        @media screen and (max-width: 1023px) {
+            max-width: 475px;
+        }
+    }
+    &-title {
+        font-weight: 500;
+        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            font-size: 32px;
+        }
+    }
+    &-desc {
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    &-number {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: lineH(44, 64);
+        color: $primary-color-lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 66px;
+        min-width: 66px;
+        height: 66px;
+        border-radius: 100rem;
+        background-color: rgba($primary-color-lighter, 0.15);
+        z-index: 999;
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+            width: 47px;
+            height: 47px;
+            min-width: 47px;
+        }
+    }
+    &-background {
+        img {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.15;
+        }
+        img:nth-child(1) {
+            top: 620px;
+            left: -143px;
+        }
+        img:nth-child(2) {
+            bottom: 547px;
+            right: 32px;
+        }
+        img:nth-child(3) {
+            bottom: 198px;
+            right: -107px;
+        }
+        @media screen and (max-width: 1279px) {
+            display: none;
+        }
+    }
+}

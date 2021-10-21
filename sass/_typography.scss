@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+.heading {
+    font-family: $secondary-font;
+    font-weight: 700;
+    color: $secondary-color;
+    font-size: 50px;
+    line-height: lineH(50, 60);
+    & > span {
+        display: block;
+        font-size: 29px;
+        color: $primary-color-lighter;
+        line-height: lineH(29, 36);
+    }
+    &-secondary {
+        font-size: 64px;
+        font-weight: 400;
+        color: $secondary-color-lighter;
+    }
+}
+
+.text {
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: lineH(18, 38);
+    color: $text-color;
+    &--xl {
+        font-size: 36px;
+        line-height: lineH(36, 53);
+    }
+    &--xxl {
+        font-size: 47px;
+        line-height: lineH(47, 70);
+    }
+}
+
+.text {
+    &-capitalize {
+        text-transform: capitalize;
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-center {
+        text-align: center;
+    }
+}

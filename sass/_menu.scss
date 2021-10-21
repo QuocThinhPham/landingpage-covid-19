@@ -1,0 +1,43 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+    &-link {
+        font-size: 18px;
+        color: $secondary-color;
+        position: relative;
+        transition: 0.2s;
+        &::after {
+            visibility: hidden;
+            opacity: 0;
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            margin-top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 100rem;
+            background: $primary-color;
+            transition: 0.2s;
+        }
+    }
+    &-item:hover,
+    &-item.active {
+        .menu-link {
+            color: $primary-color;
+            &::after {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .btn--secondary {
+        margin-left: 50px;
+    }
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}

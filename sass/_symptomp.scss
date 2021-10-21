@@ -1,0 +1,32 @@
+.symptomp {
+    margin-bottom: 139px;
+    position: relative;
+    .section-header {
+        max-width: 715px;
+    }
+    &-image {
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 1279px) {
+            padding: 0 15px;
+        }
+    }
+    &-background {
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+        img:nth-child(1) {
+            bottom: 190px;
+            left: 67px;
+            transform: rotate(-21.24deg);
+        }
+        img:nth-child(2) {
+            bottom: -20px;
+            right: 20px;
+            transform: rotate(8deg);
+        }
+    }
+}

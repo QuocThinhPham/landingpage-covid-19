@@ -1,0 +1,69 @@
+.contagion {
+    margin-bottom: 148px;
+    position: relative;
+    .section-header {
+        margin-bottom: 111px;
+        max-width: 570px;
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 50px;
+        }
+    }
+    .container {
+        position: relative;
+    }
+    &-caption {
+        letter-spacing: 0.3px;
+        word-spacing: 1px;
+    }
+    &-image img {
+        margin: 0 auto 50px;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 30px;
+        @media screen and (max-width: 1279px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 0 30px;
+        }
+        @media screen and (max-width: 1023px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px 0;
+            padding: 0 120px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 0 30px;
+        }
+    }
+    &-item {
+        padding: 58px 60px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.11);
+    }
+    &-title {
+        font-weight: normal;
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+        }
+    }
+    &-desc {
+        line-height: lineH(18, 33);
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    &-background {
+        @include image-background;
+        img {
+            z-index: -1;
+            position: absolute;
+            left: -160px;
+            bottom: 18px;
+        }
+    }
+    @media screen and (max-width: 1279px) {
+        margin-bottom: 100px;
+    }
+}
